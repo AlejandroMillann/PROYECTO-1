@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Alejandro">
+  <link rel="icon" href="img/icono.png" type="image/x-icon">
+  <title>Contacto Café Aroma | Cafetería en Vitoria</title>
+  <meta name="description" content="Contacta con Café Aroma. Consulta nuestra ubicación, horarios y envíanos tus dudas o sugerencias.">
+
+
+  <!-- Fuente para dislexia -->
+  <link href="https://fonts.cdnfonts.com/css/opendyslexic" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dislexia">
+
+  <!-- Skip link -->
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+  <header role="banner">
+    <div class="logo">
+      <img src="img/icono.png" alt="Logo de la cafetería Café Aroma">
+      <h1>Café Aroma</h1>
+    </div>
+
+    <nav role="navigation" aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Menú</a></li>
+        <li><a href="contacto.html" class="activo" aria-current="page">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Botón alto contraste -->
+    <button id="modoAltoContraste" class="boton" aria-label="Activar modo de alto contraste">
+      Alto contraste
+    </button>
+  </header>
+
+  <main id="contenido-principal" role="main">
+
+    <section class="hero hero-contacto" aria-labelledby="titulo-contacto">
+      <h2 id="titulo-contacto">Contáctanos</h2>
+      <p>¿Tienes alguna pregunta o sugerencia? Estaremos encantados de escucharte.</p>
+    </section>
+
+    <section class="contacto-contenido">
+
+      <!-- Formulario -->
+      <div class="formulario">
+        <h2 id="titulo-formulario">Formulario de contacto</h2>
+
+        <form action="#" method="post" aria-labelledby="titulo-formulario" aria-describedby="ayuda-formulario">
+
+          <p id="ayuda-formulario" class="sr-only">
+            Todos los campos son obligatorios. El formulario permite contactar con Café Aroma.
+          </p>
+
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required aria-required="true">
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required aria-required="true">
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required aria-required="true"></textarea>
+
+          <div class="checkbox">
+            <input type="checkbox" id="rgpd" required aria-required="true">
+            <label for="rgpd">
+              He leído y acepto la <a href="#" aria-label="Leer política de privacidad">política de privacidad</a>.
+            </label>
+          </div>
+
+          <button type="submit" class="boton" aria-label="Enviar formulario de contacto">
+            Enviar
+          </button>
+        </form>
+      </div>
+
+      <!-- Mapa -->
+      <div class="mapa" role="region" aria-label="Ubicación de la cafetería en el mapa">
+        <h2>Nos encontramos aquí</h2>
+        <iframe
+          title="Mapa con la ubicación de Café Aroma"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5851.38746243626!2d-2.6796801234017487!3d42.83708290483068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc27498c36ce7%3A0x77a752667da1b8c1!2sC.I.F.P.%20Ciudad%20Jard%C3%ADn%20L.H.I.I.!5e0!3m2!1ses!2ses!4v1761552111452!5m2!1ses!2ses"
+          width="100%" height="350" style="border:0;" allowfullscreen loading="lazy">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Café Aroma. Todos los derechos reservados.</p>
+
+    <div class="redes" aria-label="Redes sociales">
+      <a href="#" aria-label="Facebook de Café Aroma"><img src="img/facebook.png" alt=""></a>
+      <a href="#" aria-label="Instagram de Café Aroma"><img src="img/instagram.png" alt=""></a>
+      <a href="#" aria-label="Twitter de Café Aroma"><img src="img/twitter.png" alt=""></a>
+    </div>
+  </footer>
+
+  <!-- Aviso de cookies -->
+  <div class="cookies" id="cookies" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+    <p>
+      Este sitio usa cookies para mejorar tu experiencia.
+      <button id="aceptarCookies" aria-label="Aceptar cookies">Aceptar</button>
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

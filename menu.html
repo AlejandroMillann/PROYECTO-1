@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Alejandro">
+  <link rel="icon" href="img/icono.png" type="image/x-icon">
+  <title>Menú Café Aroma | Carta de cafés, bollería y desayunos</title>
+  <meta name="description" content="Descubre la carta de Café Aroma: cafés artesanales, bollería fresca y desayunos para todos los gustos.">
+
+
+  <!-- Fuente para dislexia -->
+  <link href="https://fonts.cdnfonts.com/css/opendyslexic" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dislexia">
+
+  <!-- Skip link -->
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+  <header role="banner">
+    <div class="logo">
+      <img src="img/icono.png" alt="Logo de la cafetería Café Aroma">
+      <h1>Café Aroma</h1>
+    </div>
+
+    <nav role="navigation" aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html" class="activo" aria-current="page">Menú</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Botón alto contraste -->
+    <button id="modoAltoContraste" class="boton" aria-label="Activar modo de alto contraste">
+      Alto contraste
+    </button>
+  </header>
+
+  <main id="contenido-principal" role="main">
+
+    <section class="hero hero-menu" aria-labelledby="titulo-menu">
+      <h2 id="titulo-menu">Nuestra Carta</h2>
+      <p>Una selección artesanal de cafés, dulces y desayunos para disfrutar cada día.</p>
+    </section>
+
+    <section class="menu-categorias" aria-label="Listado de productos de la carta">
+
+      <h2>Cafés</h2>
+      <div class="grid-menu" role="list">
+
+        <article role="listitem">
+          <img src="img/cafe1.jpg" alt="Taza de espresso clásico">
+          <h3>Espresso Clásico</h3>
+          <p>Intenso, aromático y con cuerpo. El favorito de los puristas.</p>
+          <span class="precio" aria-label="Precio 1 euro con 50 céntimos">1,50 €</span>
+        </article>
+
+        <article role="listitem">
+          <img src="img/cafe2.jpg" alt="Capuchino con espuma de leche">
+          <h3>Capuchino Cremoso</h3>
+          <p>Equilibrio perfecto entre café, leche vaporizada y espuma.</p>
+          <span class="precio" aria-label="Precio 2 euros con 20 céntimos">2,20 €</span>
+        </article>
+
+        <article role="listitem">
+          <img src="img/cafe3.jpg" alt="Latte de vainilla">
+          <h3>Latte Vainilla</h3>
+          <p>Suave y dulce, con el toque aromático de la vainilla natural.</p>
+          <span class="precio" aria-label="Precio 2 euros con 50 céntimos">2,50 €</span>
+        </article>
+      </div>
+
+      <h2>Bollería</h2>
+      <div class="grid-menu" role="list">
+
+        <article role="listitem">
+          <img src="img/croissant.jpg" alt="Croissant de mantequilla recién horneado">
+          <h3>Croissant de mantequilla</h3>
+          <p>Receta francesa con mantequilla 100% natural.</p>
+          <span class="precio" aria-label="Precio 1 euro con 20 céntimos">1,20 €</span>
+        </article>
+
+        <article role="listitem">
+          <img src="img/muffin.webp" alt="Muffin de chocolate con trozos de cacao">
+          <h3>Muffin de Chocolate</h3>
+          <p>Horneado cada mañana, con trozos de cacao fundido.</p>
+          <span class="precio" aria-label="Precio 1 euro con 80 céntimos">1,80 €</span>
+        </article>
+
+        <article role="listitem">
+          <img src="img/tarta.jpg" alt="Porción de tarta de zanahoria">
+          <h3>Tarta de Zanahoria</h3>
+          <p>Deliciosa, esponjosa y cubierta con glaseado suave.</p>
+          <span class="precio" aria-label="Precio 2 euros con 80 céntimos">2,80 €</span>
+        </article>
+      </div>
+
+      <h2>Desayunos</h2>
+      <div class="grid-menu" role="list">
+
+        <article role="listitem">
+          <img src="img/desayuno1.jpg" alt="Desayuno clásico con tostadas, café y zumo">
+          <h3>Desayuno Clásico</h3>
+          <p>Tostadas, café y zumo natural.</p>
+          <span class="precio" aria-label="Precio 3 euros con 50 céntimos">3,50 €</span>
+        </article>
+
+        <article role="listitem">
+          <img src="img/desayuno2.jpg" alt="Tostadas con aguacate fresco">
+          <h3>Tostadas con Aguacate</h3>
+          <p>Pan rústico, aguacate fresco y semillas de sésamo.</p>
+          <span class="precio" aria-label="Precio 4 euros">4,00 €</span>
+        </article>
+
+        <article role="listitem">
+          <img src="img/desayuno3.jpg" alt="Yogur con granola y frutas">
+          <h3>Yogur con Granola</h3>
+          <p>Con frutas de temporada y miel artesanal.</p>
+          <span class="precio" aria-label="Precio 3 euros con 20 céntimos">3,20 €</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Café Aroma. Todos los derechos reservados.</p>
+
+    <div class="redes" aria-label="Redes sociales">
+      <a href="#" aria-label="Facebook de Café Aroma"><img src="img/facebook.png" alt=""></a>
+      <a href="#" aria-label="Instagram de Café Aroma"><img src="img/instagram.png" alt=""></a>
+      <a href="#" aria-label="Twitter de Café Aroma"><img src="img/twitter.png" alt=""></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

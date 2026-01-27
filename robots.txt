@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://AlejandroMillann.github.io/sitemap.xml
