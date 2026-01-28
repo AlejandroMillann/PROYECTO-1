@@ -12,3 +12,27 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("cookiesAceptadas", "true");
   });
 });
+
+// ===============================
+// ACCESIBILIDAD - ALTO CONTRASTE
+// ===============================
+
+document.addEventListener("DOMContentLoaded", function () {
+  const botonContraste = document.getElementById("modoAltoContraste");
+  const body = document.body;
+
+  // Comprobar si el usuario ya tenía alto contraste activado
+  if (localStorage.getItem("altoContraste") === "true") {
+    body.classList.add("alto-contraste");
+  }
+
+  if (botonContraste) {
+    botonContraste.addEventListener("click", function () {
+      body.classList.toggle("alto-contraste");
+
+      // Guardar preferencia
+      const activado = body.classList.contains("alto-contraste");
+      localStorage.setItem("altoContraste", activado);
+    });
+  }
+});

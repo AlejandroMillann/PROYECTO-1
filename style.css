@@ -34,21 +34,28 @@ body {
 }
 
 /* -------- ACCESIBILIDAD: SKIP LINK -------- */
+/* -------- ACCESIBILIDAD: SKIP LINK (VERSIÓN INFALIBLE) -------- */
 .skip-link {
-  position: absolute;
-  top: -50px;
-  left: 0;
+  position: fixed;
+  top: 10px;
+  left: 10px;
   background: #000;
   color: #fff;
-  padding: 0.5rem 1rem;
-  z-index: 10000;
+  padding: 0.6rem 1rem;
+  z-index: 999999;
   text-decoration: none;
-  border-radius: 0 0 5px 0;
+  border-radius: 6px;
+  font-weight: bold;
+  transform: translateY(-200%);
+  transition: transform 0.2s ease;
 }
 
-.skip-link:focus {
-  top: 0;
+.skip-link:focus,
+.skip-link:active {
+  transform: translateY(0);
 }
+
+
 
 /* -------- ACCESIBILIDAD: FOCUS VISIBLE -------- */
 a:focus,
@@ -58,6 +65,26 @@ textarea:focus {
   outline: 3px solid #ffbf00;
   outline-offset: 2px;
 }
+
+/* -------- BOTÓN ACCESIBILIDAD (ALTO CONTRASTE) -------- */
+.boton-accesibilidad {
+  background-color: var(--color-secundario);
+  color: var(--color-principal);
+  padding: 0.3rem 0.7rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 0.85rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 1rem;
+  white-space: nowrap;
+}
+
+.boton-accesibilidad:hover {
+  background-color: var(--color-blanco);
+  color: var(--color-principal);
+}
+
 
 /* -------- ACCESIBILIDAD: SOLO LECTORES DE PANTALLA -------- */
 .sr-only {
@@ -96,8 +123,9 @@ textarea:focus {
 /* -------- ENCABEZADO -------- */
 header {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr auto auto;
   align-items: center;
+  gap: 1rem;
   background-color: var(--color-principal);
   color: var(--color-blanco);
   padding: 1rem 2rem;
